@@ -1,4 +1,27 @@
 .tile {
-	flex: 1 1 50vw;
-	height: 50vw;
+	cursor: pointer;
+	display: flex;
+    flex: 1 1 50vw;
+    flex-direction: column;
+    height: 50vw;
+    justify-content: flex-end;
+} 
+
+.tile__text {
+	color: white;
+	margin: 0px 0px 0px 30px;
+}
+
+.tile__text:first-of-type {
+	font-weight: 600;
+}
+
+.tile__text:nth-of-type(2) {
+	font-weight: 200;
+	margin-bottom: 20px;
+}
+
+.tile:nth-of-type(3) > .tile__text,
+.tile:nth-of-type(4) > .tile__text {
+	color: black;
 }

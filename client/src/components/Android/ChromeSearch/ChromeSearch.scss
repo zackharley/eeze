@@ -1,0 +1,49 @@
+.chrome-search-screen {
+	height: 100vh;
+}
+
+.chrome-search-screen__header {
+	align-items: center;
+	background: white;
+	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+	display: flex;
+	flex-direction: row;
+}
+
+.chrome-search-screen__search {
+	background: transparent;
+	border: none;
+	color: #4285f4;
+	flex: 1 1 auto;
+    font-size: 30px;
+	margin: 20px;
+    text-shadow: 0px 0px 0px #000;
+    -webkit-text-fill-color: transparent;
+}
+
+.chrome-search-screen__search::-webkit-input-placeholder {
+	color: #ccc;
+    text-shadow: none;
+    -webkit-text-fill-color: initial;
+}
+
+.chrome-search-screen__search:focus {
+	outline: none;
+}
+
+.chrome-search-screen__microphone {
+	color: #757575;
+	font-size: 38px;
+    margin-right: 30px;
+}
+
+.chrome-search-screen__progress-bar {
+	background-color: #4285f4;
+	height: 2px;
+	transition: width 1s;
+	width: 0px;
+}
+
+.chrome-search-screen--overlay {
+
+}

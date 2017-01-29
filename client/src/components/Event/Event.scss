@@ -1,0 +1,133 @@
+$white: white;
+$grey: grey;
+
+.event-screen {
+	display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.event-screen__header {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+}
+
+.event-screen__header__icon {
+	color: $white;
+    font-size: 2.5rem;
+}
+
+.event-screen__header__icon:first-of-type {
+	margin-left: 1.5rem;
+}
+
+.event-screen__header__icon:last-of-type {
+	margin: 0 1.5rem 0 auto;
+}
+
+.event-screen__header__logo {
+	height: 50px;
+	margin: 20px 0 20px auto;
+}
+
+.event-screen__img {
+    display: flex;
+	flex: 1 1 auto;
+    flex-direction: column;
+}
+
+.event-screen__heart {
+    align-self: flex-end;
+    color: $white;
+    flex: 1 1 auto;
+	font-size: 3.5rem;
+    margin: 40px;
+    opacity: 0.7;
+}
+
+.event-screen__img__info {
+	display: flex;
+	flex-direction: row;
+	margin: 40px;
+}
+
+.event-screen__clock {
+	color: $white;
+	font-size: 40px;
+    margin: 15px 20px 0px 0px;
+}
+
+.event-screen__img__text {
+	color: $white;
+	font-size: 22px;
+}
+
+.event-screen__details {
+	background-color: $white;
+}
+
+.event-screen__details__title {
+	margin: 40px;
+}
+
+.event-screen__details__bottom {
+	margin: 0px 40px 40px 40px;
+}
+
+.event-screen__details__bottom-wrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+.event-screen__details__bottom-icon {
+    color: grey;
+	font-size: 24px;
+    margin: 15px 15px 15px 0px;
+    text-align: center;
+    width: 20px;
+}
+
+.event-screen__details__bottom-text {
+	font-size: 18px;
+}
+
+.event-screen__details__bottom-text--right {
+	margin-left: auto;
+}
+
+.event-screen__img__text:last-of-type {
+	margin-left: auto;
+}
+
+.event-screen-screen__buy {
+	display: flex;
+    justify-content: center;
+}
+
+.event-screen-screen__buy-btn {
+	background-color: transparent;
+	border: 1px solid $white;
+	border-radius: 42.5px;
+	color: $white;
+	height: 85px;
+	font-size: 22px;
+	margin: 30px;
+	width: 475px;
+}
+
+.event-screen-screen__buy-btn:focus {
+	outline: none;
+}
+
+.event-screen-screen__footer {
+	display: flex;
+}
+
+.event-screen-screen__footer__link {
+	color: $grey;
+    font-size: 14px;
+    margin-left: auto;
+    padding: 10px;
+    text-decoration: none;
+}

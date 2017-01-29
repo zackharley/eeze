@@ -3,8 +3,27 @@
 }
 
 .home-screen__header {
+	align-items: center;
 	display: flex;
 	flex-direction: row;
+}
+
+.home-screen__header__icon {
+	color: white;
+    font-size: 2.5rem;
+}
+
+.home-screen__header__icon:first-of-type {
+	margin-left: 1.5rem;
+}
+
+.home-screen__header__icon:last-of-type {
+	margin: 0 1.5rem 0 auto;
+}
+
+.home-screen__header__logo {
+	height: 50px;
+	margin: 20px 0 20px auto;
 }
 
 .home-screen__tiles {
@@ -28,4 +47,12 @@
 
 .home-screen__nav-list__item {
 	flex: 1 1 auto;
+    margin: 1.2rem;
+    padding: 1.2rem;
+    width: 3rem;
+}
+
+.home-screen__nav-list__item--selected {
+    border: 1px solid white;
+    border-radius: 2rem;
 }

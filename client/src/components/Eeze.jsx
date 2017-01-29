@@ -1,8 +1,10 @@
 require('./Ezee.scss');
 import React, { Component } from 'react';
+import ChromeSearch from './Android/ChromeSearch/ChromeSearch';
 import Login from './Login/Login';
 import CreateAccount from './CreateAccount/CreateAccount';
 import Home from './Home/Home';
+import Desktop from './Android/Desktop/Desktop';
 import Event from './Event/Event';
 
 // let isPushEnabled = false;
@@ -13,7 +15,8 @@ export default class Eeze extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			currentScreen: 'login'
+			currentScreen: 'chrome-search',
+			event: ''
 		}
 	}
 
@@ -118,11 +121,23 @@ export default class Eeze extends Component {
 		});
 	}
 
+	setCurrentEvent(event) {
+		this.setState({
+			currentEvent: event
+		});
+	}
+
 	render() {
 
 		const currentScreen = this.state.currentScreen;
 
-		if(currentScreen === 'login') {
+		if(currentScreen === 'chrome-search') {
+			return(
+				<div>
+					<ChromeSearch changeScreen={this.changeScreen.bind(this)} />
+				</div>
+			);
+		} else if(currentScreen === 'login') {
 			return(
 				<div>
 					<Login changeScreen={this.changeScreen.bind(this)} />
@@ -137,15 +152,30 @@ export default class Eeze extends Component {
 		} else if(currentScreen === 'home') {
 			return(
 				<div>
-					<Home changeScreen={this.changeScreen.bind(this)} />
+					<Home
+						changeScreen={this.changeScreen.bind(this)}
+						setCurrentEvent={this.setCurrentEvent.bind(this)}
+					/>
 				</div>
 			);
 		} else if(currentScreen === 'event') {
 			return(
 				<div>
-					<Event changeScreen={this.changeScreen.bind(this)} />
+					<Event
+						event={this.state.currentEvent}
+						changeScreen={this.changeScreen.bind(this)}
+					/>
 				</div>
 			);	
+		} else if(currentScreen === 'desktop') {
+			return(
+				<div>
+					<Desktop
+						changeScreen={this.changeScreen.bind(this)}
+						setCurrentEvent={this.setCurrentEvent.bind(this)}
+					/>
+				</div>
+			);
 		}
 	}
 

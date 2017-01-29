@@ -1,0 +1,75 @@
+.desktop-screen {
+	background-image: url(/assets/images/home-screen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+	height: 100vh;
+	justify-content: center;
+}
+
+.desktop-screen--overlay {
+	background-color: rgba(0,0,0,0.5);
+	height: 100vh;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100vw;
+	z-index: 1;
+}
+
+.desktop-screen__notification {
+	align-items: center;
+    background-color: white;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    left: 10vw;
+	position: absolute;
+	top: 0;
+    width: 80vw;
+    z-index: 2;    
+}
+
+.desktop-screen__ticket-wrapper {
+    font-size: 36px;
+    margin-left: 20px;
+}
+
+.desktop-screen__ticket-bg {
+	color: #4285f4;
+}
+
+.desktop-screen__ticket-icon {
+	color: white;
+}	
+
+.desktop-screen__call-to-action {
+	display: flex;
+	flex: 1 1 auto;
+    flex-direction: column;
+    height: 100px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.desktop-screen__call-to-action__top {
+	align-items: center;
+	display: flex;
+}
+
+.desktop-screen__call-to-action__title {
+	font-size: 22px;
+	font-weight: 500;
+	margin: 0;
+}
+
+.desktop-screen__call-to-action__time {
+	margin: 0 0 0 auto;
+}
+
+.desktop-screen__call-to-action__prompt {
+	font-size: 20px;
+    font-weight: 400;
+	margin: 0
+}
