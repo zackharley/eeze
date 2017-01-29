@@ -1,0 +1,31 @@
+.home-screen {
+
+}
+
+.home-screen__header {
+	display: flex;
+	flex-direction: row;
+}
+
+.home-screen__tiles {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.home-screen__nav {
+}
+
+.home-screen__nav-list {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+	margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.home-screen__nav-list__item {
+	flex: 1 1 auto;
+}

@@ -1,0 +1,98 @@
+$grey: grey;
+$purple: #19192a;
+$white: white;
+
+.login-screen {
+    background-image: url(/assets/images/crowd.jpg);
+	background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+	height: 100vh;
+}
+
+.login-screen__background--overlay {
+    background: linear-gradient(rgba(5, 1, 50, 0.35), black);
+	height: 100%;
+}
+
+.login-screen__top {
+	align-items: center;
+	display: flex;
+	height: 50%;
+	justify-content: center;
+}
+
+.login-screen__bottom {
+	display: flex;
+	flex-direction: column;
+	height: 50%
+}
+
+.login-screen__form {
+    align-items: center;
+	display: flex;
+	flex: 1 1 auto;
+    flex-direction: column;
+}
+
+.login-screen__form-item {
+	background-color: $purple;
+	border-radius: 42.5px;
+	color: $white;
+	display: flex;
+	height: 85px;
+	margin: 10px;
+	width: 475px;
+}
+
+.login-screen__form-item__icon {
+	font-size: 2.5rem;
+    margin: 1.4rem;
+}
+
+.login-screen__form-item__input {
+    background-color: transparent;
+    border: none;
+    color: $white;
+    flex: 1 1 auto;
+    font-size: 22px;
+    padding: 20px;
+}
+
+.login-screen__form-item__input:focus {
+	outline: none;
+}
+
+.login-screen__login-btn {
+	background-color: $grey;
+	border: none;
+	border-radius: 42.5px;
+	height: 85px;
+	font-size: 22px;
+	margin: 10px;
+	width: 475px;
+}
+
+.login-screen__login-btn:focus {
+	outline: none;
+}
+
+.login-screen__footer {
+	display: flex;
+	padding: 10px;
+}
+
+.login-screen__footer__link {
+    color: $grey;
+    font-size: 14px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.login-screen__footer__link:last-of-type {
+    margin-left: auto;
+}
+
+.login-screen__footer__link:hover {
+    text-decoration: underline;
+}
